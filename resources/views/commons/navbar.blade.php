@@ -14,10 +14,11 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::check())
                         <li>
-                            <a href="{{ route('items.create') }}">
+                               <a href="{{ route('items.create') }}">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                 アイテムを追加
                             </a>
+
                         </li>
 
                         <li class="dropdown">

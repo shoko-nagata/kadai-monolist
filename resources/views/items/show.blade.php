@@ -39,6 +39,13 @@
                         Haveしたユーザ
                     </div>
                     <div class="panel-body">
+                        <p class="item-title">{{ $item->name }}</p>
+                        <div class="buttons text-center">
+                            @if (Auth::check())
+                                @include('items.have_button', ['item' => $item])
+                            @endif
+                        </div>
+                        
                     </div>
                 </div>
             </div>
